@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SearchForm from "./SearchForm";
+import Stories from "./Stories";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="text-3xl font-serif font-semibold text-primary m-4 text-center tracking-wider underline decoration-double decoration-orange-400 ">
+        <h1>Stack-News</h1>
+      </div>
+
+      <SearchForm />
+      <Stories />
+    </>
   );
 }
 
